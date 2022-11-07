@@ -102,11 +102,30 @@ I might also want to explore surveilance culture and its role in the future of t
 
 [Big Tech and Government Collabs](https://www.orfonline.org/expert-speak/treading-the-unusual-alliance-between-big-tech-and-the-government-post-covid-19-74472/) Examples of some weird progress.
 
+[Satirizing conspiracy theories about the government](https://birdsarentreal.com/) This is a perfect spoof of my fears. Something comedic such as this would be funny.
+
 
 
 1. **Identify new skills or technologies** (e.g. a design method, programming pattern, code library, etc.) you are interested to learn and could potentially use in your project.
-1. **Write a summary** of your topic(s), research, and technology (3–4 sentences). Address why you are drawn to this topic and why it is important to explore. Identify the communities, resources, and issues involved. What [frameworks](https://docs.google.com/presentation/d/1OWc_e1pquvwKi4qxJShsZ1Rqia1dbDBcwpxYwdOic7o/edit#slide=id.g165f853ab3b_0_0) or methodologies might you use?
-1. Bring the above to class for the...
+
+
+I hear a lot of buzzwords like React and Vue, so it would be interesting to try one of the js frameworks for this. Otherwise, nodejs would be interesting still with some bootstrap -- maybe try and stick to our current simple design philosophies like swiss and brutalist works. 
+
+Otherwise, I really want to try and see if I can do some more advanced back end work and see what it takes to collect consumer information with cookies.
+
+
+3. **Write a summary** of your topic(s), research, and technology (3–4 sentences). Address why you are drawn to this topic and why it is important to explore. Identify the communities, resources, and issues involved. What [frameworks](https://docs.google.com/presentation/d/1OWc_e1pquvwKi4qxJShsZ1Rqia1dbDBcwpxYwdOic7o/edit#slide=id.g165f853ab3b_0_0) or methodologies might you use?
+
+
+This topic is important to me because I feel as if my family has suffered for a few generations due to corporate aggression and governmental greed. My family used to be worth 200 million dollars, and now, we are blue collar workers trying to keep our business alive under crippling debt and crushing taxes. After my family lost the wealth because of Corporate Pepsi and the FBI, we have been reduced to rats trying to escape the race that the banks and government put us under. I am determined to fix this. 
+I think that this is important to explore because I feel as if people fail to understand the true role of the money system in our lives. Money is not real. The government and the people in charge can print and play around all they want while the common worker is weighed down by crippling taxes. The rich DO NOT PAY TAXES. The IRS is a cash machine for the elites and they have rigged the game with powerful tax laws, lobbyism, and now technology. 
+They can now feed us any information they want with targeted algorithms. This divisive process is integral to their ability to control the lower classes. 
+[Facebook](https://www.theatlantic.com/technology/archive/2017/10/what-facebook-did/542502/) Generic article about how facebook can divide and affect poltical outcomes.
+
+I might want to take a brutalist approach and make a spoof about my "conspiracy" theory. Or have a web app collect data on someone through input and cookies, and tell them how long it will take to pay down their debts and retire with their current salary and tax brackets. 
+
+
+5. Bring the above to class for the...
 
 <details>
 <summary>In-class activity</summary>

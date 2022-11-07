@@ -88,7 +88,22 @@ Fork this repository and clone it to your `critical-web-design` folder on your m
 *Identify a topic, collect research, prepare a summary for a brainstorming session.*
 
 1. **Identify potential topics** to explore. It shouldn't be too specific, nor too broad. Is there a specific problem you want to solve? Or do you wish to address issues by [problematizing](https://en.wikipedia.org/wiki/Problematization) your subject?
+
+I unfortunately fear that we are living in the last few generations of freedom. Theoretically, as AI and technolgy drive our world, it is only a matter of time before they will be able to shut down our lives with a few clicks of a button one day. They will be able to quell protests and constitutional rights in the matter of seconds all in the name of the benefits of the human race. This topic frightens me, but it is fascinating to think about how our government and the elites can control us now and how they might find ways to control us in the future.
+
+I might want to explore the idea of the rat race. How the government can effectively enslave the poorer population with taxes and debt while feeding them information through big tech and polluting their brains with consumerism. 
+
+I might also want to explore surveilance culture and its role in the future of the enslavement of the human race. In general, I think that I might want to explore the ideas of modern day enslavement and how the current status quo kills mobility and happiness with twisted tax laws, twisted political donations, etc. 
+
+
 1. **Collect research** (related articles, etc.) **and inspiration** (2-3 links or summaries of similar projects). Look at the [Critical Web Design / Radical Software Example Works](https://docs.google.com/spreadsheets/d/1mQ0doWT6tGXm2W-hB5zuz3I8mijGhLSkAe_XrcfMdok/edit#gid=0) for ideas or this list of [](https://www.awwwards.com/25-non-profit-and-social-driven-websites.html).
+
+[Rat Race](https://www.youtube.com/watch?v=e9dZQelULDk) This video is hyperbolic but interesting.
+
+[Big Tech and Government Collabs](https://www.orfonline.org/expert-speak/treading-the-unusual-alliance-between-big-tech-and-the-government-post-covid-19-74472/) Examples of some weird progress.
+
+
+
 1. **Identify new skills or technologies** (e.g. a design method, programming pattern, code library, etc.) you are interested to learn and could potentially use in your project.
 1. **Write a summary** of your topic(s), research, and technology (3–4 sentences). Address why you are drawn to this topic and why it is important to explore. Identify the communities, resources, and issues involved. What [frameworks](https://docs.google.com/presentation/d/1OWc_e1pquvwKi4qxJShsZ1Rqia1dbDBcwpxYwdOic7o/edit#slide=id.g165f853ab3b_0_0) or methodologies might you use?
 1. Bring the above to class for the...

@@ -1,16 +1,16 @@
 
-var savingsaccnt = document.getElementById("savingsaccnt");
+var chart5 = document.getElementById("savingsaccnt");
 
 
 // new
-let y = [];
-let x = [];
-var myChart5 = new Chart(savingsaccnt, {
+let labeling = [];
+let dataPoints = [];
+var myChart5 = new Chart(chart5, {
 type: 'line',
 data: {
-    labels: y,
+    labels: ['1','2','3'],
     datasets: [{
-        data: x,
+        data: ['1','2','3'],
         backgroundColor: "rgba(48, 164, 255, 0.2)",
         borderColor: "rgba(48, 164, 255, 0.8)",
         fill: true,
@@ -36,10 +36,12 @@ options: {
 }
 });
 
-function addData(chart, label, data) {
-    chart.data.labels.push(label);
-    chart.data.datasets.forEach((dataset) => {
-        dataset.data.push(data);
-    });
-    chart.update();
-}
+
+// function addData(chart, label, data) {
+//     chart.data.labels.push(label);
+//     chart.data.datasets.forEach((dataset) => {
+//         dataset.data.push(data);
+//     });
+//     chart.update();
+// }
+

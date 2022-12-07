@@ -102,8 +102,8 @@
                                 <div class="card-header">Question 1</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you graduate Highschool?</p>
-                                    <button class="btn-colored" id="yes1" onclick="switchQuestion('1','2')">Yes</button>
-                                    <button class="btn-colored" id="no1" onclick="switchQuestion('1','2')">No</button>
+                                    <button class="btn-colored" id="yes1" onclick="switchQuestion(1,2,true)">Yes</button>
+                                    <button class="btn-colored" id="no1" onclick="switchQuestion(1,2,false)">No</button>
                         
                                 </div>
                             </div>
@@ -116,8 +116,8 @@
                                 <div class="card-header">Question 2</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you go to college?</p>
-                                    <button class="btn-colored" id="yes2" onclick="switchQuestion('2','3')">Yes</button>
-                                    <button class="btn-colored" id="no2" onclick="switchQuestion('2','3')">No</button>
+                                    <button class="btn-colored" id="yes2" onclick="switchQuestion(2,3,true)">Yes</button>
+                                    <button class="btn-colored" id="no2" onclick="switchQuestion(2,3,false)">No</button>
                                     
                                 </div>
                             </div>
@@ -130,8 +130,8 @@
                                 <div class="card-header">Question 3</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you take debt to go to College? </p>
-                                    <button class="btn-colored" id="yes3" onclick="switchQuestion('3','4')">Yes</button>
-                                    <button class="btn-colored" id="no3" onclick="switchQuestion('3','4')">No</button> 
+                                    <button class="btn-colored" id="yes3" onclick="switchQuestion(3,4, true)">Yes</button>
+                                    <button class="btn-colored" id="no3" onclick="switchQuestion(3,4, false)">No</button> 
                                 </div>
                             </div>
                         </div>
@@ -145,18 +145,18 @@
                                             <label class="col-sm-2"> What industry will you work in? <br><br></label>
                                             <div class="col-sm-10 select">
                                                 <select id="occupation" class="form-select">
-                                                    <option value="business" onclick="saveOccupation()"> Finance, Accounting, Business </option>
-                                                    <option value="healthcare" onclick="saveOccupation()"> Healthcare </option>
-                                                    <option value="engineering" onclick="saveOccupation()"> Engineering or Technology</option>
-                                                    <option value="socials" onclick="saveOccupation()"> Social Services </option>
-                                                    <option value="art" onclick="saveOccupation()"> Art and Design </option>
-                                                    <option value="trade" onclick="saveOccupation()"> Tradework </option>
-                                                    <option value="media" onclick="saveOccupation()"> Media </option>
-                                                    <option value="education" onclick="saveOccupation()"> Education </option>
+                                                    <option value="business" > Finance, Accounting, Business </option>
+                                                    <option value="healthcare" > Healthcare </option>
+                                                    <option value="engineering" > Engineering or Technology</option>
+                                                    <option value="socials" > Social Services </option>
+                                                    <option value="art" > Art and Design </option>
+                                                    <option value="trade" > Tradework </option>
+                                                    <option value="media" > Media </option>
+                                                    <option value="education" > Education </option>
                                                 </select>
                                             </div>
                                         </div>
-                                    <button class="btn-colored" class="next" onclick="switchQuestion('4','5')"> Next Question </button> 
+                                    <button class="btn-colored" class="next" onclick="switchQuestion(4,5)"> Next Question </button> 
                                 </div>
                             </div>
                         </div>
@@ -167,8 +167,8 @@
                                 <div class="card-header">Question 5</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you eventually start a business? </p>
-                                    <button class="btn-colored" id="yes5" onclick="switchQuestion('5','6')">Yes</button>
-                                    <button class="btn-colored" id="no5" onclick="switchQuestion('5','6')">No</button> 
+                                    <button class="btn-colored" id="yes5" onclick="switchQuestion(5,6,true)">Yes</button>
+                                    <button class="btn-colored" id="no5" onclick="switchQuestion(5,6,false)">No</button> 
                                 </div>
                             </div>
                         </div>
@@ -179,8 +179,8 @@
                                 <div class="card-header">Question 6</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you avoid taxes? </p>
-                                    <button class="btn-colored" id="yes6" onclick="switchQuestion('6','7')">Yes</button>
-                                    <button class="btn-colored" id="no6" onclick="switchQuestion('6','7')">No</button> 
+                                    <button class="btn-colored" id="yes6" onclick="switchQuestion(6,7,true)">Yes</button>
+                                    <button class="btn-colored" id="no6" onclick="switchQuestion(6,7,false)">No</button> 
                                 </div>
                             </div>
                         </div>
@@ -191,14 +191,14 @@
                                 <div class="card-header">Question 7</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you invest in stocks and bonds? </p>
-                                    <button class="btn-colored" id="yes7" onclick="switchQuestion('6','7')">Yes</button>
-                                    <button class="btn-colored" id="no7" onclick="switchQuestion('6','7')">No</button> 
+                                    <button class="btn-colored" id="yes7" onclick="switchQuestion(6,7,true)">Yes</button>
+                                    <button class="btn-colored" id="no7" onclick="switchQuestion(6,7,false)">No</button> 
                                 </div>
                             </div>
                         </div>
                     </div>
                      <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-lg-12">
                             <div class="card">
                                 <div class="card-header"> Projected Retirement Savings </div>
                                 <div class="card-body">

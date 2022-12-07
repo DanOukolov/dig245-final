@@ -1,4 +1,4 @@
-
+let savingsBalance = 0;
 $(document).ready
 (function() {
     'use strict';
@@ -12,14 +12,14 @@ $(document).ready
     $("#retirement").hide();
     $("#life-working").hide();
 
-   
+    var chart1 = document.getElementById("linechart");
+    var chart2 = document.getElementById("barchart");
+    var chart3 = document.getElementById("piechart");
+    var chart4 = document.getElementById("stackedbarchart");
 
 
 });
-var chart1 = document.getElementById("linechart");
-var chart2 = document.getElementById("barchart");
-var chart3 = document.getElementById("piechart");
-var chart4 = document.getElementById("stackedbarchart");
+
 // new
 var myChart1 = new Chart(chart1, {
 type: 'line',
@@ -170,144 +170,170 @@ options: {
 
 
 
-function switchQuestion(this_q, next_q){
-    if($(this).data("question") == "4"){
-        saveOccupation();
-    }
-    countPoints();
+function switchQuestion(this_q, next_q, answer){
+    console.log("switch", this_q, next_q);
+    countPoints(this_q,next_q, answer);
+
+    console.log("post-counting");
     $("#q"+this_q).hide();
     $("#q"+next_q).show();
 }
 
 
-function saveOccupation(){
-    let myOccupation = document.getElementById("occupation");
-    myOccupation = occupation.options[occupation.selectedIndex].text;
-    return myOccupation;
-}
 
 
 
-let savingsBalance = 0;
-function countPoints(){
-    if($(this).data("question") == "1" && q1btnyes === true){
+
+
+
+
+function countPoints(this_q,next_q, answer){
+    console.log("hello" , answer, this_q);
+    if(this_q == 1 && answer === true){ //$("#yes").clicked()===true;
         savingsBalance += 50000;
         savings = savingsBalance.toString();
+        addData(myChart5,"Teens", savings);
+        
 
         //chart5.addData(myChart5, "Teens", savings);
     }
 
-    else if(($(this).data("question") == "1" && q1btnyes === false)){
-        savingsBalance += 10000;
-        savings = savingsBalance.toString();
+    else if((this_q == 1 && answer === false)){
+        
+        console.log(answer);
+        // savingsBalance += 10000;
+        // savings = savingsBalance.toString();
         //chart5.addData(myChart5, "18", savings);
     }
 
-    else if(($(this).data("question") == "2" && q2btnyes === true)){
-        savingsBalance += 1000000;
-        savings = savingsBalance.toString();
+    else if((this_q == 2 && answer === true)){
+        
+        console.log(answer);
+        // savingsBalance += 1000000;
+        // savings = savingsBalance.toString();
         //chart5.addData(myChart5, "22", savings);
     }
 
-    else if($(this).data("question") == "2" && q2btnyes === false){
-        savingsBalance += 500000;
-        savings = savingsBalance.toString();
+    else if(this_q == 2 && answer === false){
+        
+        console.log(answer);
+        // savingsBalance += 500000;
+        // savings = savingsBalance.toString();
         //chart5.addData(myChart5,"22", savings);
     }
 
-    else if($(this).data("question") == "3" && q3btnyes === true){
-        savingsBalance -= 200000;
-        savings = savingsBalance.toString();
+    else if(this_q == 3 && answer === true){
+        
+        console.log(answer);
+        // savingsBalance -= 200000;
+        // savings = savingsBalance.toString();
         //chart5.addData(myChart5, "27", savings);
     }
 
-    else if($(this).data("question") == "3" && q3btnyes === false){
-        savingsBalance += 200000;
-        savings = savingsBalance.toString();
+    else if(this_q == 3 && answer === false){
+        
+        console.log(answer);
+        // savingsBalance += 200000;
+        // savings = savingsBalance.toString();
         //chart5.addData(myChart5, "27",savings);
     }
 
-    else if($(this).data("question") == "4"){
-        if(saveOccupation() === "business"){
-            savingsBalance += 1000000;
-            savings = savingsBalance.toString();
+    else if(this_q == 4){
+        let myOccupation = document.getElementById("occupation");
+        myOccupation = occupation.options[occupation.selectedIndex].text;
+        console.log("occupationSaved", myOccupation);
+        if(myOccupation === "business"){
+            // savingsBalance += 1000000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"30",savings);
         }
-        if(saveOccupation() === "healthcare"){
-            savingsBalance += 800000;
-            savings = savingsBalance.toString();
+        if(myOccupation === "healthcare"){
+            // savingsBalance += 800000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"30",savings);
 
-        }if(saveOccupation() === "engineering"){
-            savingsBalance += 1500000;
-            savings = savingsBalance.toString();
+        }if(myOccupation === "engineering"){
+            // savingsBalance += 1500000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"30",savings);
 
-        }if(saveOccupation() === "socials"){
-            savingsBalance += 200000;
-            savings = savingsBalance.toString();
+        }if(myOccupation === "socials"){
+            // savingsBalance += 200000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"30",savings);
         }
-        if(saveOccupation() === "art"){
-            savingsBalance += 100000;
-            savings = savingsBalance.toString();
+        if(myOccupation === "art"){
+            // savingsBalance += 100000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"30",savings);
 
         }if(saveOccupation === "trade"){
-            savingsBalance += 750000;
-            savings = savingsBalance.toString();
+            // savingsBalance += 750000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"30",savings);
 
-        }if(saveOccupation() === "media"){
-            savingsBalance += 800000;
-            savings = savingsBalance.toString();
+        }if(myOccupation === "media"){
+            // savingsBalance += 800000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"30",savings);
         }
-        if(saveOccupation() === "education"){
-            savingsBalance += 400000;
-            savings = savingsBalance.toString();
+        if(myOccupation === "education"){
+            // savingsBalance += 400000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"30",savings);
         }
     }
 
-    else if($(this).data("question") == "5"){
-        if(q5btnyes === true){
-            savingsBalance += 1000000;
-            savings = savingsBalance.toString();
+    else if(this_q == 5){
+        if(answer === true){
+            
+            console.log(answer);
+            // savingsBalance += 1000000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"40",savings);
         }
         
-        if(q5btnyes === false){
-            savingsBalance += 20000;
-            savings = savingsBalance.toString();
+        if(answer === false){
+            
+            console.log(answer);
+            // savingsBalance += 20000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"40",savings);
         }
     }
 
-    else if($(this).data("question") == "6"){
-        if(q6btnyes === true){
-            savingsBalance += 2000000; 
-            savings = savingsBalance.toString();
+    else if(this_q == 6){
+        if(answer === true){
+            
+            console.log(answer);
+            // savingsBalance += 2000000; 
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"50",savings);
         }
 
-        if(q6btnyes === false){
-            savingsBalance -= 1000000;
-            savings = savingsBalance.toString();
+        if(answer === false){
+            
+            console.log(answer);
+            // savingsBalance -= 1000000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"50",savings);
         }
     }
 
-    else if($(this).data("question") == "7"){
-        if(q7btnyes === true){
-            savingsBalance += 1000000; 
-            savings = savingsBalance.toString();
+    else if(this_q == 7){
+        if(answer === true){
+            
+            console.log(answer);
+            // savingsBalance += 1000000; 
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"60",savings);
         }
 
         if(q7btn === false){
-            savingsBalance -= 400000;
-            savings = savingsBalance.toString();
+            
+            console.log(answer);
+            // savingsBalance -= 400000;
+            // savings = savingsBalance.toString();
             //chart5.addData(myChart5,"60",savings);
         }
     }

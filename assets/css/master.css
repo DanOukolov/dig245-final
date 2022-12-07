@@ -29,14 +29,14 @@ td {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-.app-logo{
+.app-logo {
     position: static;
     width: 94%;
     margin-bottom: 100px;
     
 }
 
-img.blog-style{
+img.blog-style {
     position:relative; 
     height:75%; 
     width:75%; 

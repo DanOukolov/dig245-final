@@ -21,13 +21,13 @@
             </div>
             <ul class="list-unstyled components text-secondary">
                 <li>
-                    <a href="finance.html"><i class="fas fa-archway"></i> Welcome to the Rat Race </a>
+                    <a href="finance.html"><i class="fas fa-archway"></i> Run the Rat Race </a>
                 </li>
                 <li>
-                    <a href="slider.html"><i class="fas fa-table"></i> Run the Rat Race</a>
+                    <a href="slider.html"><i class="fas fa-table"></i> How Capitalism Works </a>
                 </li>
                 <li>
-                    <a href="charts.html"><i class="fas fa-chart-bar"></i> Economic Charts</a>
+                    <a href="charts.html"><i class="fas fa-chart-bar"></i> Economic Charts for Fun </a>
                 </li>
             </ul>
         </nav>
@@ -63,206 +63,127 @@
             <!-- end of navbar navigation -->
             <div class="content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 page-header">
-                            <div class="page-pretitle"> Why are the Rats Racing? </div>
-                            <h2 class="page-title"> How does Money Control Us?  </h2>
-                            <div>
-                                <br>
-                                <p> Our financial system is dominated by Big Banks and the Federal Reserve. <br><br> If money makes the world go round, banks and the Federal Reserve make the world go round. </p>
-                                <br>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="card-header"> Projected Retirement Savings </div>
-                                        <div class="card-body">
-                                            <p class="card-title"></p>
-                                            <div class="canvas-wrapper">
-                                                <canvas class="chart" id="savingsaccnt"></canvas>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="page-title">
+                        <h3>Can You Beat the Rat Race?</h3>
+                    </div>
+                    <div id="q1" class="row" data-question="1">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">Question 1</div>
+                                <div class="card-body">
+                                    <p class="card-title">Will you graduate Highschool?</p>
+                                    <button class="yes" onclick="switchQuestion('1','2')">Yes</button>
+                                    <button class="no" onclick="switchQuestion('1','2')">No</button>
+                        
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
-                                    <div class="card">
-                                        <div class="content">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="icon-big text-center">
-                                                        <i class="olive fas fa-money-bill-alt"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-8">
-                                                    <div class="detail">
-                                                        <p class="detail-subtitle">Definition - The Federal Reserve</p>
-                                                        <span id= "fed"class="number">The Federal Reserve is the central bank of the United States. The Fed acts independently of the US government and can affect how much money is in the economy as well as what rates banks get charged for borrowing money from the Fed.
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <hr/>
-                                                <div class="stats">
-                                                    <i class="fas fa-calendar"></i> Created in 1913   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
-                                    <div class="card">
-                                        <div class="content">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="icon-big text-center">
-                                                        <i class="olive fas fa-money-bill-alt"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-8">
-                                                    <div class="detail">
-                                                        <p class="detail-subtitle">Definition - The 16th Amendment</p>
-                                                        <span id= "amendment"class="number"> The Congress shall have power to lay and collect taxes on incomes, from whatever source derived, without apportionment among the several States, and without regard to any census or enumeration. <br></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <hr />
-                                                <div class="stats">
-                                                    <i class="fas fa-calendar"></i> Passed in 1909 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
-                                    <div class="card">
-                                        <div class="content">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="icon-big text-center">
-                                                        <i class="fas fa-dollar-sign"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-8">
-                                                    <div class="detail">
-                                                        <p class="detail-subtitle">Definition - Inflation</p>
-                                                        <span id="communism" class="number"> Inflation is the increase in prices of goods and services due to an increase in money supply. This happens when the Fed prints money, buys bonds, pays US bonds back, or loans more money to banks at a lower fed funds rate. </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <hr />
-                                                <div class="stats">
-                                                    <i class="fas fa-stopwatch"></i> Economic Principle
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
-                                    <div class="card">
-                                        <div class="content">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="icon-big text-center">
-                                                        <i class="violet fas fa-eye"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-8">
-                                                    <div class="detail">
-                                                        <p class="detail-subtitle"> Definition - Fiscal vs. Moneytary Policy </p>
-                                                        <span style = "position:static" id= "video" class="number"> Fiscal policy is a legislative movement of our government to stimulate our economy. They can change the tax codes, use fiscal stimuli, or offer subsidies. Monetary policies are the actions of the Fed. </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <hr />
-                                                <div class="stats">
-                                                    <i class="fas fa-envelope-open-text"></i> Economic Principle 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
+                    
+                    <div id= "q2" class="row question" data-question="2">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">Question 2</div>
+                                <div class="card-body">
+                                    <p class="card-title">Will you go to college?</p>
+                                    <button class="yes" onclick="switchQuestion('2','3')">Yes</button>
+                                    <button class="no" onclick="switchQuestion('2','3')">No</button>
+                                    
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12 col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header"> The History of the Federal Reserve </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                        <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> Historical Context </a>
-                                                        <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">  </a>
-                                                        <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> Secrecy </a>
-                                                        <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"> Corruption </a>
-                                                        <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"> Power </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="tab-content" id="v-pills-tabContent">
-                                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> Foremost, it is important to understand that the Federal Reserve was founded after the <u><a href="https://www.stlouisfed.org/education/the-panic-of-1907-jp-morgan-and-the-money-trust#:~:text=The%20Panic%20of%201907%20was,from%20a%20severe%20financial%20crisis.">financial crisis of 1907</a></u> where the banks made a series of bad decisions that caused consumers to pull their money out of the financial system. The same people who caused this crisis founded the Federal Reserve. 
-                                                            <br><br>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"> In November 1910, six men – <u><a href="https://en.wikipedia.org/wiki/Nelson_W._Aldrich">Nelson Aldrich</a></u>, A. Piatt Andrew, Henry Davison, Arthur Shelton, Frank Vanderlip and Paul Warburg – met at the Jekyll Island Club, off the coast of Georgia, to write a plan to reform the nation’s banking system. The meeting and its purpose were closely guarded secrets, and participants did not admit that the meeting occurred until the 1930s. But the plan written on Jekyll Island laid a foundation for what would eventually be the Federal Reserve System. <br><br> The group told the public that they were going on a "DUCK HUNT."</div>
-                                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
-                                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
-                                                    </div>
-                                                </div>
+                        </div>
+                    </div>
+
+                    <div id="q3" class="row question" data-question="3">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">Question 3</div>
+                                <div class="card-body">
+                                    <p class="card-title">Will you take debt to go to College? </p>
+                                    <button class="yes" onclick="switchQuestion('3','4')">Yes</button>
+                                    <button class="no" onclick="switchQuestion('3','4')">No</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="q4" class="row question" data-question="4">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">Question 4</div>
+                                <div class="card-body">
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-2"> What industry will you work in? <br><br></label>
+                                            <div class="col-sm-10 select">
+                                                <select id="occupation" class="form-select">
+                                                    <option value="business" onclick="saveOccupation()"tchQuestio> Finance, Accounting, Business </option>
+                                                    <option value="healthcare" onclick="saveOccupation()"> Healthcare </option>
+                                                    <option value="engineering" onclick="saveOccupation()"> Engineering or Technology</option>
+                                                    <option value="socials" onclick="saveOccupation()"> Social Services </option>
+                                                    <option value="art" onclick="saveOccupation()"> Art and Design </option>
+                                                    <option value="trade" onclick="saveOccupation()"> Tradework </option>
+                                                    <option value="media" onclick="saveOccupation()"> Media </option>
+                                                </select>
                                             </div>
                                         </div>
+                                    <button class="next" onclick="switchQuestion('4','5')"> Next Question </button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="q5" class="row question" data-question="5">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">Question 5</div>
+                                <div class="card-body">
+                                    <p class="card-title">Will you eventually start a business? </p>
+                                    <button class="yes" onclick="switchQuestion('5','6')">Yes</button>
+                                    <button class="no" onclick="switchQuestion('5','6')">No</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="q6" class="row question" data-question="6">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">Question 6</div>
+                                <div class="card-body">
+                                    <p class="card-title">Will you avoid taxes? </p>
+                                    <button class="yes" onclick="switchQuestion('6','7')">Yes</button>
+                                    <button class="no" onclick="switchQuestion('6','7')">No</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="q7" class="row question" data-question="7">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">Question 7</div>
+                                <div class="card-body">
+                                    <p class="card-title">Will you invest in stocks and bonds? </p>
+                                    <button class="yes" onclick="switchQuestion('6','7')">Yes</button>
+                                    <button class="no" onclick="switchQuestion('6','7')">No</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header"> Projected Retirement Savings </div>
+                                <div class="card-body">
+                                    <p class="card-title"></p>
+                                    <div class="canvas-wrapper">
+                                        <canvas class="chart" id="savingsaccnt"></canvas>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="card">
-                                        <div class="content">
-                                            <div class="head">
-                                                <h5 class="mb-0">Tax Bracket Data Adjusted For Inflation</h5>
-                                                <p class="text-muted">The Income of the Lowest Tax Bracket</p>
-                                            </div>
-                                            <div class="canvas-wrapper">
-                                                <canvas class="chart" id="trafficflow"></canvas>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="head">
-                                                <h5 class="mb-0">Tax Bracket Data Adjusted For Inflation</h5>
-                                                <p class="text-muted">The Income of the Lowest Tax Bracket</p>
-                                            </div>
-                                            <div class="canvas-wrapper">
-                                                <canvas class="chart" id="savingsaccnt"></canvas>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card">
-                                        <div class="content">
-                                            <div class="head">
-                                                <h5 class="mb-0">Tax Bracket Data Adjusted For Inflation</h5>
-                                                <p class="text-muted">The Income of the Highest Tax Bracket</p>
-                                            </div>
-                                            <div class="canvas-wrapper">
-                                                <canvas class="chart" id="sales"></canvas>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+            <div class="row">
+                                                <div class="col-md-6">
                             <div class="card">
                                 <div class="content">
                                     <div class="head">
@@ -297,8 +218,10 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chartsjs/Chart.min.js"></script>
     <script src="assets/js/dashboard-charts.js"></script>
-    <script src="assets/js/question-chart.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
 </body>
 
 </html>

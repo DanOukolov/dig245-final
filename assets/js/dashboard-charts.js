@@ -1,13 +1,16 @@
-var trafficchart = document.getElementById("trafficflow");
+
+var savingsaccnt = document.getElementById("savingsaccnt");
 
 
 // new
-var myChart1 = new Chart(trafficchart, {
+let y = [];
+let x = [];
+var myChart5 = new Chart(savingsaccnt, {
 type: 'line',
 data: {
-    labels: ['1910', '1920', '1930', '1940', '1950', '1960', '1970', '1980', '1990', '2000', '2010', '2020'],
+    labels: y,
     datasets: [{
-        data: ['12900', '14000', '13000', '13000', '14000', '12450', '14500', '12550', '12505', '12500', '13000', '14000'],
+        data: x,
         backgroundColor: "rgba(48, 164, 255, 0.2)",
         borderColor: "rgba(48, 164, 255, 0.8)",
         fill: true,
@@ -32,3 +35,11 @@ options: {
     },
 }
 });
+
+function addData(chart, label, data) {
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.push(data);
+    });
+    chart.update();
+}

@@ -150,35 +150,3 @@ options: {
     },
 }
 });
-
-//new
-var myChart5 = new Chart(chart5, {
-    type: 'line',
-    data: {
-        labels: ['1910', '1920', '1930', '1940', '1950', '1960', '1970', '1980', '1990', '2000', '2010', '2020'],
-        datasets: [{
-            data: ['20', '50', '40', '50', '60', '70', '80', '110','150', '200', '300','400'],
-            backgroundColor: "rgba(48, 164, 255, 0.2)",
-            borderColor: "rgba(48, 164, 255, 0.8)",
-            fill: true,
-            borderWidth: 1
-        }]
-    },
-    options: {
-        animation: {
-            duration: 2000,
-            easing: 'easeOutQuart',
-        },
-        plugins: {
-            legend: {
-                display: false,
-                position: 'right',
-            },
-            title: {
-                display: true,
-                text: 'Percent Change',
-                position: 'left',
-            },
-        },
-    }
-});

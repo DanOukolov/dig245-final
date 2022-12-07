@@ -36,7 +36,7 @@ function saveOccupation(){
 function countPoints(){
     if($(this).data("question") == "1" && $(".yes")){
         savings += 50000;
-        // chart.addData("#savingsaccnt", savings, data)
+        chart.addData("#savingsaccnt", savings, data)
     }
 
     else if(($(this).data("question") == "1" && $(".no"))){
@@ -111,10 +111,10 @@ function countPoints(){
     }
 }
 
-// function addData(chart, label, data) {
-//     $("#savingsaccnt").data.labels.push(label);
-//     chart.data.datasets.forEach((dataset) => {
-//         dataset.data.push(data);
-//     });
-//     chart.update();
-// }
+function addData(chart, label, data) {
+    $("#savingsaccnt").data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.push(data);
+    });
+    chart.update();
+}

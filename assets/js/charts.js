@@ -2,8 +2,6 @@ var chart1 = document.getElementById("linechart");
 var chart2 = document.getElementById("barchart");
 var chart3 = document.getElementById("piechart");
 var chart4 = document.getElementById("stackedbarchart");
-var chart5 = document.getElementById("savingsaccnt");
-
 // new
 var myChart1 = new Chart(chart1, {
 type: 'line',

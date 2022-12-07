@@ -17,11 +17,11 @@
     <div class="wrapper">
         <nav id="sidebar" class="active">
             <div class="sidebar-header">
-                <a href="index.html"><img src="assets/img/favicon.png" alt="bootraper logo" class="app-logo"></a>
+                <a href="index.html"><img src="assets/img/component3next.png" alt="bootraper logo" class="app-logo"></a>
             </div>
             <ul class="list-unstyled components text-secondary">
                 <li>
-                    <a href="finance.html"><i class="fas fa-archway"></i> Run the Rat Race </a>
+                    <a href="quiz.html"><i class="fas fa-archway"></i> Run the Rat Race </a>
                 </li>
                 <li>
                     <a href="slider.html"><i class="fas fa-table"></i> How Capitalism Works </a>
@@ -66,14 +66,44 @@
                     <div class="page-title">
                         <h3>Can You Beat the Rat Race?</h3>
                     </div>
+                    <div class="row">
+                        <div id="retirement" class="col-md-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <div class="head">
+                                                <h5 class="mb-0"> You can Retire! </h5>
+                                                <p class="text-muted">You retired with <script> savingsBalance.write(); </script>! This is plenty to live off of until you are old and dying! </p>
+                                            </div>
+                                            <div class="canvas-wrapper">
+                                                <p> In your life decisions, you were financially intelligent enough to work hard, save money, invest, avoid debt, or even avoid taxes. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="life-working" class="col-md-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <div class="head">
+                                                <h5 class="mb-0">You cannot retire!</h5>
+                                                <p class="text-muted"> You were not able to retire with <script> savingsBalance.write(); </script> This won't be a fun retirement. Play again!</p>
+                                            </div>
+                                            <div class="canvas-wrapper">
+                                                <p>In your life decisions, you decided to live passionately and did not want to compete or bend the rules. Understandable. Try again!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="q1" class="row" data-question="1">
                         <div class="col-md-12 col-lg-12">
                             <div class="card">
                                 <div class="card-header">Question 1</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you graduate Highschool?</p>
-                                    <button class="yes" onclick="switchQuestion('1','2')">Yes</button>
-                                    <button class="no" onclick="switchQuestion('1','2')">No</button>
+                                    <button class="btn-colored" id="yes1" onclick="switchQuestion('1','2')">Yes</button>
+                                    <button class="btn-colored" id="no1" onclick="switchQuestion('1','2')">No</button>
                         
                                 </div>
                             </div>
@@ -86,8 +116,8 @@
                                 <div class="card-header">Question 2</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you go to college?</p>
-                                    <button class="yes" onclick="switchQuestion('2','3')">Yes</button>
-                                    <button class="no" onclick="switchQuestion('2','3')">No</button>
+                                    <button class="btn-colored" id="yes2" onclick="switchQuestion('2','3')">Yes</button>
+                                    <button class="btn-colored" id="no2" onclick="switchQuestion('2','3')">No</button>
                                     
                                 </div>
                             </div>
@@ -100,8 +130,8 @@
                                 <div class="card-header">Question 3</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you take debt to go to College? </p>
-                                    <button class="yes" onclick="switchQuestion('3','4')">Yes</button>
-                                    <button class="no" onclick="switchQuestion('3','4')">No</button> 
+                                    <button class="btn-colored" id="yes3" onclick="switchQuestion('3','4')">Yes</button>
+                                    <button class="btn-colored" id="no3" onclick="switchQuestion('3','4')">No</button> 
                                 </div>
                             </div>
                         </div>
@@ -115,17 +145,18 @@
                                             <label class="col-sm-2"> What industry will you work in? <br><br></label>
                                             <div class="col-sm-10 select">
                                                 <select id="occupation" class="form-select">
-                                                    <option value="business" onclick="saveOccupation()"tchQuestio> Finance, Accounting, Business </option>
+                                                    <option value="business" onclick="saveOccupation()"> Finance, Accounting, Business </option>
                                                     <option value="healthcare" onclick="saveOccupation()"> Healthcare </option>
                                                     <option value="engineering" onclick="saveOccupation()"> Engineering or Technology</option>
                                                     <option value="socials" onclick="saveOccupation()"> Social Services </option>
                                                     <option value="art" onclick="saveOccupation()"> Art and Design </option>
                                                     <option value="trade" onclick="saveOccupation()"> Tradework </option>
                                                     <option value="media" onclick="saveOccupation()"> Media </option>
+                                                    <option value="education" onclick="saveOccupation()"> Education </option>
                                                 </select>
                                             </div>
                                         </div>
-                                    <button class="next" onclick="switchQuestion('4','5')"> Next Question </button> 
+                                    <button class="btn-colored" class="next" onclick="switchQuestion('4','5')"> Next Question </button> 
                                 </div>
                             </div>
                         </div>
@@ -136,8 +167,8 @@
                                 <div class="card-header">Question 5</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you eventually start a business? </p>
-                                    <button class="yes" onclick="switchQuestion('5','6')">Yes</button>
-                                    <button class="no" onclick="switchQuestion('5','6')">No</button> 
+                                    <button class="btn-colored" id="yes5" onclick="switchQuestion('5','6')">Yes</button>
+                                    <button class="btn-colored" id="no5" onclick="switchQuestion('5','6')">No</button> 
                                 </div>
                             </div>
                         </div>
@@ -148,8 +179,8 @@
                                 <div class="card-header">Question 6</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you avoid taxes? </p>
-                                    <button class="yes" onclick="switchQuestion('6','7')">Yes</button>
-                                    <button class="no" onclick="switchQuestion('6','7')">No</button> 
+                                    <button class="btn-colored" id="yes6" onclick="switchQuestion('6','7')">Yes</button>
+                                    <button class="btn-colored" id="no6" onclick="switchQuestion('6','7')">No</button> 
                                 </div>
                             </div>
                         </div>
@@ -160,8 +191,8 @@
                                 <div class="card-header">Question 7</div>
                                 <div class="card-body">
                                     <p class="card-title">Will you invest in stocks and bonds? </p>
-                                    <button class="yes" onclick="switchQuestion('6','7')">Yes</button>
-                                    <button class="no" onclick="switchQuestion('6','7')">No</button> 
+                                    <button class="btn-colored" id="yes7" onclick="switchQuestion('6','7')">Yes</button>
+                                    <button class="btn-colored" id="no7" onclick="switchQuestion('6','7')">No</button> 
                                 </div>
                             </div>
                         </div>
@@ -182,36 +213,6 @@
                     
                 </div>
             </div>
-            <div class="row">
-                                                <div class="col-md-6">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="head">
-                                        <h5 class="mb-0">Learning from the Data </h5>
-                                        <p class="text-muted">The IRS is Eating into the Middle Class</p>
-                                    </div>
-                                    <div class="canvas-wrapper">
-                                        <p>As you can see, the trend for the lowest tax bracket has remained the same. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="head">
-                                        <h5 class="mb-0">Learning from the Data</h5>
-                                        <p class="text-muted">The IRS Considers More and More People to be "Rich"</p>
-                                    </div>
-                                    <div class="canvas-wrapper">
-                                        <p>As we can see from the data, there is a trend where the IRS is applying the highest percentage tax rates to poorer and poorer people</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -219,8 +220,7 @@
     <script src="assets/vendor/chartsjs/Chart.min.js"></script>
     <script src="assets/js/dashboard-charts.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    
 
 </body>
 

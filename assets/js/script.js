@@ -9,6 +9,8 @@ $(document).ready
     });
     
     $(".question").hide();
+    $("#retirement").hide();
+    $("#life-working").hide();
 
    
 
@@ -166,7 +168,7 @@ options: {
 });
 
 
-let savings = 0;
+
 
 function switchQuestion(this_q, next_q){
     if($(this).data("question") == "4"){
@@ -184,89 +186,148 @@ function saveOccupation(){
     return myOccupation;
 }
 
+
+
+let savingsBalance = 0;
 function countPoints(){
-    if($(this).data("question") == "1" && $(".yes")){
-        savings += "50000";
-        chart.addData(myChart5, 'Teens', savings)
+    if($(this).data("question") == "1" && q1btnyes === true){
+        savingsBalance += 50000;
+        savings = savingsBalance.toString();
+
+        //chart5.addData(myChart5, "Teens", savings);
     }
 
-    else if(($(this).data("question") == "1" && $(".no"))){
-        savings += 10000;
-        chart.addData("#savingsaccnt")
+    else if(($(this).data("question") == "1" && q1btnyes === false)){
+        savingsBalance += 10000;
+        savings = savingsBalance.toString();
+        //chart5.addData(myChart5, "18", savings);
     }
 
-    else if(($(this).data("question") == "2" && $(".yes"))){
-        savings += 1000000;
+    else if(($(this).data("question") == "2" && q2btnyes === true)){
+        savingsBalance += 1000000;
+        savings = savingsBalance.toString();
+        //chart5.addData(myChart5, "22", savings);
     }
 
-    else if($(this).data("question") == "2" && $(".no")){
-        savings += 500000;
+    else if($(this).data("question") == "2" && q2btnyes === false){
+        savingsBalance += 500000;
+        savings = savingsBalance.toString();
+        //chart5.addData(myChart5,"22", savings);
     }
 
-    else if($(this).data("question") == "3" && $(".yes")){
-        savings -= 200000;
+    else if($(this).data("question") == "3" && q3btnyes === true){
+        savingsBalance -= 200000;
+        savings = savingsBalance.toString();
+        //chart5.addData(myChart5, "27", savings);
     }
 
-    else if($(this).data("question") == "3" && $(".no")){
-        savings = savings;
+    else if($(this).data("question") == "3" && q3btnyes === false){
+        savingsBalance += 200000;
+        savings = savingsBalance.toString();
+        //chart5.addData(myChart5, "27",savings);
     }
 
     else if($(this).data("question") == "4"){
-        if(myOccupation === "business"){
-            savings += 1000000;
+        if(saveOccupation() === "business"){
+            savingsBalance += 1000000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"30",savings);
         }
-        if(myOccupation === "healthcare"){
-            savings += 800000;
-        }if(myOccupation === "engineering"){
-            savings += 15000000;
-        }if(myOccupation === "socials"){
-            savings += 200000;
-        }
-        if(myOccupation === "art"){
-            savings += 100000;
-        }if(myOccupation === "trade"){
-            savings += 750000;
-        }if(myOccupation === "media"){
-            savings += 800000;
-        }
+        if(saveOccupation() === "healthcare"){
+            savingsBalance += 800000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"30",savings);
 
+        }if(saveOccupation() === "engineering"){
+            savingsBalance += 1500000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"30",savings);
+
+        }if(saveOccupation() === "socials"){
+            savingsBalance += 200000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"30",savings);
+        }
+        if(saveOccupation() === "art"){
+            savingsBalance += 100000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"30",savings);
+
+        }if(saveOccupation === "trade"){
+            savingsBalance += 750000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"30",savings);
+
+        }if(saveOccupation() === "media"){
+            savingsBalance += 800000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"30",savings);
+        }
+        if(saveOccupation() === "education"){
+            savingsBalance += 400000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"30",savings);
+        }
     }
 
     else if($(this).data("question") == "5"){
-        if($(".yes")){
-            savings += 1000000;
+        if(q5btnyes === true){
+            savingsBalance += 1000000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"40",savings);
         }
         
-        if($(".no")){
-           savings += 20000 
+        if(q5btnyes === false){
+            savingsBalance += 20000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"40",savings);
         }
     }
 
     else if($(this).data("question") == "6"){
-        if($(".yes")){
-            savings += 2000000; 
+        if(q6btnyes === true){
+            savingsBalance += 2000000; 
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"50",savings);
         }
 
-        if($(".no")){
-            savings -= 400000;
+        if(q6btnyes === false){
+            savingsBalance -= 1000000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"50",savings);
         }
     }
 
     else if($(this).data("question") == "7"){
-        if($(".yes")){
-            savings += 1000000; 
+        if(q7btnyes === true){
+            savingsBalance += 1000000; 
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"60",savings);
         }
 
-        if($(".no")){
-            savings -= 400000;
+        if(q7btn === false){
+            savingsBalance -= 400000;
+            savings = savingsBalance.toString();
+            //chart5.addData(myChart5,"60",savings);
         }
     }
 }
 
-function addData(chart, label, data) {
-    myChart5.data.labels.push(label);
-    chart.data.datasets.forEach((dataset) => {
-        dataset.data.push(data);
-    });
-    chart.update();
+// function addData(chart, label, data) {
+//     chart.data.labels.push(label);
+//     chart.data.datasets.forEach((dataset) => {
+//         dataset.data.push(data);
+//     });
+//     chart.update();
+// }
+
+function weighBalance(){
+    countPoints();
+    if(savingsBalance < 2500000){
+        $("#life-working").show();
+    }
+    
+    if(savingsBalance >=2500000){
+        $("#retirement").show();
+    }
 }

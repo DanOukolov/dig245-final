@@ -31,8 +31,17 @@ td {
 }
 .app-logo{
     position: static;
-    width: 21%;
+    width: 94%;
+    margin-bottom: 100px;
     
+}
+
+img.blog-style{
+    position:relative; 
+    height:75%; 
+    width:75%; 
+    border-radius: 3px; 
+    box-shadow:0 1px 1px rgba(0,0,0,0.1)
 }
 
 body {
@@ -78,6 +87,14 @@ body {
     color: #fff;
 }
 
+.btn-colored{
+    border-radius: 10%;
+}
+.btn-colored:hover{
+    background: #2196F3 !important;
+    color: #fff;
+    border-style: hidden;
+}
 
 #body>.content {
     position: relative;

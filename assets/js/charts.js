@@ -8,7 +8,7 @@ type: 'line',
 data: {
     labels: ['1910', '1920', '1930', '1940', '1950', '1960', '1970', '1980', '1990', '2000', '2010', '2020'],
     datasets: [{
-        data: ['20', '30', '40', '50', '60', '70', '80', '110','150', '200', '300','400'],
+        data: ['1', '111', '176', '147', '254', '312', '408', '867','1376', '1813', '2295','2724'],
         backgroundColor: "rgba(48, 164, 255, 0.2)",
         borderColor: "rgba(48, 164, 255, 0.8)",
         fill: true,
@@ -44,13 +44,13 @@ data: {
             backgroundColor: "rgba(54, 162, 235, 0.5)",
             borderColor: "rgb(54, 162, 235)",
             borderWidth: 1,
-            data: ["20", "30", "40", "50", "60", "70", "80",'90','100','110','120','130','140'],
+            data: ["7.59", "12.9", "14.61", "16.86", "20.88", "26.88", "29.91",'31','32.33','35.86','31.36','32.49'],
         }, {
             label: 'Spending',
             backgroundColor: "rgba(244, 67, 54, 0.5)",
             borderColor: "rgb(255, 99, 132)",
             borderWidth: 1,
-            data: ["5", "15", "25", "35", "45", "50", "85","100","130","150","180",'200'],
+            data: ["7.5", "12.7", "13.6", "20.0", "24.5", "27.6", "32.5","35.1","37.2","34.8","43.9",'52.5'],
     }]
 },
 options: {
@@ -65,7 +65,7 @@ options: {
         },
         title: {
             display: true,
-            text: 'Revenue in Trillions $',
+            text: 'Revenue as a % of GDP',
             position: 'left',
         },
     },
@@ -78,7 +78,7 @@ type: 'pie',
 data: {
     labels: ["Upper Tax Brackets","Middle Tax Brackets","Lower Tax Brackets"],
     datasets: [{
-        data: ["60", "25", "15"],
+        data: ["82.4", "30.2", "2.3"],
         backgroundColor: ["#009688", "#795548", "#673AB7", "#2196F3", "#6da252"],
         hoverOffset: 4
     }]
@@ -95,7 +95,7 @@ options: {
         },
         title: {
             display: false,
-            text: 'Total Value',
+            text: 'Trillions in $',
             position: 'left',
         },
     },
@@ -113,13 +113,13 @@ data: {
             backgroundColor: "rgba(0, 150, 136, .5)",
             borderColor: "rgb(0, 150, 136)",
             borderWidth: 1,
-            data: ["20", "30", "40", "50", "60", "70", "80"],
+            data: ["0.8","1.3","3.2", "6.55", "39.44", "92.49", "192.81", "517.81", "1039.96","2025.19","2162.71","3412.16"],
         }, {
             label: 'Liabilites',
             backgroundColor: "rgba(76, 175, 80, .5)",
             borderColor: "rgba(76, 175, 80)",
             borderWidth: 1,
-            data: ["2", "5", "15", "25", "35", "25", "15"],
+            data: ["3.2","6.26", "34.36", "70.98", "280.97", "360.48", "524.49", "1245.05","4066.29", "7080.52", "16373","30169.69"],
     }]
 },
 options: {
@@ -142,7 +142,7 @@ options: {
         },
         title: {
             display: true,
-            text: 'Volume',
+            text: 'Billions in $',
             position: 'left',
         },
     },

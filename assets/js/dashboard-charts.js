@@ -8,9 +8,9 @@ let dataPoints = [];
 var myChart5 = new Chart(chart5, {
     type: 'line',
     data: {
-        labels: ['1','2','3'],
+        labels: [],
         datasets: [{
-            data: ['1','2','3'],
+            data: [],
             backgroundColor: "rgba(48, 164, 255, 0.2)",
             borderColor: "rgba(48, 164, 255, 0.8)",
             fill: true,

@@ -63,32 +63,148 @@
             <!-- end of navbar navigation -->
             <div class="content">
                 <div class="container">
-                    <div class="page-title">
-                        <h3>Can You Beat the Rat Race?</h3>
-                    </div>
                     <div class="row">
-                        <div id="retirement" class="col-md-6">
+                        <div class="page-pretitle"> Can You Beat The Rat Race?</div>
+                            <div class="page-title">
+                                <h3> Play the Game to Find Out!</h3>
+                            </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div id="q1" class="row" data-question="1">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                    <div class="card content">
+                                        <div class="card-header">Question 1</div>
+                                        <div class="card-body">
+                                            <p class="card-title">Will you graduate Highschool?</p>
+                                            <button class="btn-colored" id="yes1" onclick="switchQuestion(1,2,true)">Yes</button>
+                                            <button class="btn-colored" id="no1" onclick="switchQuestion(1,2,false)">No</button>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="content">
+                        <div class="container">
+                            <div id= "q2" class="row question" data-question="2">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
                                     <div class="card">
-                                        <div class="content">
-                                            <div class="head">
-                                                <h5 class="mb-0"> You can Retire! </h5>
-                                                <p class="text-muted">You retired with <script> savingsBalance.write(); </script>! This is plenty to live off of until you are old and dying! </p>
-                                            </div>
-                                            <div class="canvas-wrapper">
-                                                <p> In your life decisions, you were financially intelligent enough to work hard, save money, invest, avoid debt, or even avoid taxes. </p>
-                                            </div>
+                                        <div class="card-header">Question 2</div>
+                                        <div class="card-body">
+                                            <p class="card-title">Will you go to college?</p>
+                                            <button class="btn-colored" id="yes2" onclick="switchQuestion(2,3,true)">Yes</button>
+                                            <button class="btn-colored" id="no2" onclick="switchQuestion(2,3,false)">No</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="life-working" class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div id="q3" class="row question" data-question="3">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
                                     <div class="card">
-                                        <div class="content">
-                                            <div class="head">
-                                                <h5 class="mb-0">You cannot retire!</h5>
-                                                <p class="text-muted"> You were not able to retire with <script> savingsBalance.write(); </script> This won't be a fun retirement. Play again!</p>
-                                            </div>
+                                        <div class="card-header">Question 3</div>
+                                        <div class="card-body">
+                                            <p class="card-title">Will you take debt to go to College? </p>
+                                            <button class="btn-colored" id="yes3" onclick="switchQuestion(3,4, true)">Yes</button>
+                                            <button class="btn-colored" id="no3" onclick="switchQuestion(3,4, false)">No</button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div id="q4" class="row question" data-question="4">
+                                <div class="col-md-12 col-lg-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-header">Question 4</div>
+                                        <div class="card-body">
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2"> What industry will you work in? <br><br></label>
+                                                    <div class="col-sm-10 select">
+                                                        <select id="occupation" class="form-select">
+                                                            <option value="business" > Finance, Accounting, Business </option>
+                                                            <option value="healthcare" > Healthcare </option>
+                                                            <option value="engineering" > Engineering or Technology</option>
+                                                            <option value="socials" > Social Services </option>
+                                                            <option value="art" > Art and Design </option>
+                                                            <option value="trade" > Tradework </option>
+                                                            <option value="media" > Media </option>
+                                                            <option value="education" > Education </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            <button class="btn-colored" class="next" onclick="switchQuestion(4,5,true)"> Next Question </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div id="q5" class="row question" data-question="5">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-header">Question 5</div>
+                                        <div class="card-body">
+                                            <p class="card-title">Will you eventually start a business? </p>
+                                            <button class="btn-colored" id="yes5" onclick="switchQuestion(5,6,true)">Yes</button>
+                                            <button class="btn-colored" id="no5" onclick="switchQuestion(5,6,false)">No</button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div id="q6" class="row question" data-question="6">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-header">Question 6</div>
+                                        <div class="card-body">
+                                            <p class="card-title">Will you avoid taxes? </p>
+                                            <button class="btn-colored" id="yes6" onclick="switchQuestion(6,7,true)">Yes</button>
+                                            <button class="btn-colored" id="no6" onclick="switchQuestion(6,7,false)">No</button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div id="q7" class="row question" data-question="7">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-header">Question 7</div>
+                                        <div class="card-body">
+                                            <p class="card-title">Will you invest in stocks and bonds? </p>
+                                            <button class="btn-colored" id="yes7" onclick="switchQuestion(7,7,true)">Yes</button>
+                                            <button class="btn-colored" id="no7" onclick="switchQuestion(7,7,false)">No</button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-header"> Projected Retirement Savings </div>
+                                        <div class="card-body">
+                                            <p class="card-title"></p>
                                             <div class="canvas-wrapper">
-                                                <p>In your life decisions, you decided to live passionately and did not want to compete or bend the rules. Understandable. Try again!</p>
+                                                <canvas class="chart" id="savingsaccnt"></canvas>
                                             </div>
                                         </div>
                                     </div>
@@ -96,121 +212,40 @@
                             </div>
                         </div>
                     </div>
-                    <div id="q1" class="row" data-question="1">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <div class="card-header">Question 1</div>
-                                <div class="card-body">
-                                    <p class="card-title">Will you graduate Highschool?</p>
-                                    <button class="btn-colored" id="yes1" onclick="switchQuestion(1,2,true)">Yes</button>
-                                    <button class="btn-colored" id="no1" onclick="switchQuestion(1,2,false)">No</button>
-                        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id= "q2" class="row question" data-question="2">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <div class="card-header">Question 2</div>
-                                <div class="card-body">
-                                    <p class="card-title">Will you go to college?</p>
-                                    <button class="btn-colored" id="yes2" onclick="switchQuestion(2,3,true)">Yes</button>
-                                    <button class="btn-colored" id="no2" onclick="switchQuestion(2,3,false)">No</button>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="q3" class="row question" data-question="3">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <div class="card-header">Question 3</div>
-                                <div class="card-body">
-                                    <p class="card-title">Will you take debt to go to College? </p>
-                                    <button class="btn-colored" id="yes3" onclick="switchQuestion(3,4, true)">Yes</button>
-                                    <button class="btn-colored" id="no3" onclick="switchQuestion(3,4, false)">No</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="q4" class="row question" data-question="4">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <div class="card-header">Question 4</div>
-                                <div class="card-body">
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-2"> What industry will you work in? <br><br></label>
-                                            <div class="col-sm-10 select">
-                                                <select id="occupation" class="form-select">
-                                                    <option value="business" > Finance, Accounting, Business </option>
-                                                    <option value="healthcare" > Healthcare </option>
-                                                    <option value="engineering" > Engineering or Technology</option>
-                                                    <option value="socials" > Social Services </option>
-                                                    <option value="art" > Art and Design </option>
-                                                    <option value="trade" > Tradework </option>
-                                                    <option value="media" > Media </option>
-                                                    <option value="education" > Education </option>
-                                                </select>
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div id="retirement" class="col-md-6">
+                                            <div class="card">
+                                                <div class="content">
+                                                    <div class="head">
+                                                        <h5 class="mb-0"> You can Retire! </h5>
+                                                        <p class="text-muted">You retired with plenty of money! This is plenty to live off of until you are old and dying! </p>
+                                                    </div>
+                                                    <div class="canvas-wrapper">
+                                                        <p> In your life decisions, you were financially intelligent enough to work hard, save money, invest, avoid debt, or even avoid taxes. </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    <button class="btn-colored" class="next" onclick="switchQuestion(4,5)"> Next Question </button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="q5" class="row question" data-question="5">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <div class="card-header">Question 5</div>
-                                <div class="card-body">
-                                    <p class="card-title">Will you eventually start a business? </p>
-                                    <button class="btn-colored" id="yes5" onclick="switchQuestion(5,6,true)">Yes</button>
-                                    <button class="btn-colored" id="no5" onclick="switchQuestion(5,6,false)">No</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="q6" class="row question" data-question="6">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <div class="card-header">Question 6</div>
-                                <div class="card-body">
-                                    <p class="card-title">Will you avoid taxes? </p>
-                                    <button class="btn-colored" id="yes6" onclick="switchQuestion(6,7,true)">Yes</button>
-                                    <button class="btn-colored" id="no6" onclick="switchQuestion(6,7,false)">No</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="q7" class="row question" data-question="7">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <div class="card-header">Question 7</div>
-                                <div class="card-body">
-                                    <p class="card-title">Will you invest in stocks and bonds? </p>
-                                    <button class="btn-colored" id="yes7" onclick="switchQuestion(6,7,true)">Yes</button>
-                                    <button class="btn-colored" id="no7" onclick="switchQuestion(6,7,false)">No</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <div class="card-header"> Projected Retirement Savings </div>
-                                <div class="card-body">
-                                    <p class="card-title"></p>
-                                    <div class="canvas-wrapper">
-                                        <canvas class="chart" id="savingsaccnt"></canvas>
+                                        <div id="life-working" class="col-md-6">
+                                            <div class="card">
+                                                <div class="content">
+                                                    <div class="head">
+                                                        <h5 class="mb-0">You cannot retire!</h5>
+                                                        <p class="text-muted"> You were not able to retire by 65. You must keep working! This won't be a fun retirement. Play again!</p>
+                                                    </div>
+                                                    <div class="canvas-wrapper">
+                                                        <p>In your life decisions, you decided to live passionately and did not want to compete or bend the rules. Understandable. Try again if you want!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>

@@ -324,11 +324,13 @@ function weighBalance(){
     countPoints();
     if(savingsBalance < 2500000){
         $("#life-working").show();
-        $("q7").hide();
+        $("#yes7").hide();
+        $("#no7").hide();
     }
     
     if(savingsBalance >=2500000){
         $("#retirement").show();
-        $("q7").hide();
+        $("#yes7").hide();
+        $("#no7").hide();
     }
 }
